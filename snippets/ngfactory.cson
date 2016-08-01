@@ -1,27 +1,24 @@
 '.source.js':
-  'ngFactory':
-    'prefix': 'ngfactory'
-    'body': """
-      (function() {
-          'use strict';
+    'ngFactory':
+        'prefix': 'ngfactory'
+        'body': """
+            (function() {
+                'use strict';
 
-          angular
-              .module('${1:module}')
-              .factory('${2:factory}', ${2:factory});
+                /* @ngInject */
+                function ${2:factory}() {
+                    var factory = {
+                        ${4:function}: ${4:function}
+                    };
+                    return factory;
 
-          ${2:factory}.$inject = ['${3:dependencies}'];
+                    function ${4:function}() {
 
-          /* @ngInject */
-          function ${2:factory}(${3:dependencies}) {
-              var service = {
-                  ${4:function}: ${4:function}
-              };
+                    }
+                }
 
-              return service;
-
-              function ${4:function}() {
-
-              }
-          }
-      })();
-    """
+                angular
+                    .module('${1:app}')
+                    .factory('${2:factory}', ${2:factory});
+            })();
+            """

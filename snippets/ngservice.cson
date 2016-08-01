@@ -2,22 +2,22 @@
     'ngService':
         'prefix': 'ngservice'
         'body': """
-                (function() {
-                    'use strict';
+            (function() {
+                'use strict';
 
-                    /* @ngInject */
-                    function ${2:Service}() {
-                        return {
-                            ${4:function}: ${4:function}
-                        };
+                /* @ngInject */
+                function ${2:Service}() {
+                    return {
+                        ${4:function}: ${4:function}
+                    };
 
-                        function ${4:function}() {
+                    function ${4:function}() {
 
-                        }
                     }
+                }
 
-                    angular
-                        .module('${1:app}')
-                        .service('${2:Service}', ${2:Service});
-                })();
-                """
+                angular
+                    .module('${1:app}')
+                    .service('${2:Service}', ${2:Service});
+            })();
+            """
