@@ -13,7 +13,7 @@
                     return factory;
 
                     function ${4:function}() {
-
+                        ${5}
                     }
                 }
 
