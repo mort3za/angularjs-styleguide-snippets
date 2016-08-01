@@ -1,11 +1,11 @@
 {
-  "name": "angularjs-styleguide-snippets",
-  "main": "./lib/angularjs-styleguide-snippets",
+  "name": "angularjs1x-styleguide-snippets",
+  "main": "./lib/angularjs1x-styleguide-snippets",
   "version": "0.8.0",
   "description": "A set of AngularJS snippets based on John Papa's style guide. Forked from angularjs-styleguide-snippets by Jason Miazga.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jmiazga/angularjs-styleguide-snippets.git"
+    "url": "git+https://github.com/mort3za/angularjs1x-styleguide-snippets"
   },
   "license": "MIT",
   "engines": {
@@ -14,13 +14,10 @@
   "dependencies": {},
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/jmiazga/angularjs-styleguide-snippets/issues"
+    "url": "https://github.com/mort3za/angularjs1x-styleguide-snippets/issues"
   },
-  "homepage": "https://github.com/jmiazga/angularjs-styleguide-snippets#readme",
-  "_id": "angularjs-styleguide-snippets@0.7.3",
-  "_shasum": "b048ed4701a232af5b68c120945f25759ab4e264",
-  "_resolved": "file:../d-115113-26696-x42g5i/package.tgz",
-  "_from": "../d-115113-26696-x42g5i/package.tgz",
+  "homepage": "https://github.com/mort3za/angularjs1x-styleguide-snippets#readme",
+  "_id": "angularjs1x-styleguide-snippets@0.8.0",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [],
