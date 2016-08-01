@@ -1,8 +1,7 @@
 {
   "name": "angularjs1x-styleguide-snippets",
-  "main": "./lib/angularjs1x-styleguide-snippets",
   "version": "0.9.1",
-  "description": "A set of AngularJS snippets based on John Papa's style guide. Forked from angularjs-styleguide-snippets by Jason Miazga.",
+  "description": "A set of AngularJS snippets based on John Papa's style guide. Forked from angularjs-styleguide-snippets by Jason Miazga, Plus some updates and fixes. + ngComponent",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mort3za/angularjs1x-styleguide-snippets"
@@ -16,16 +15,5 @@
   "bugs": {
     "url": "https://github.com/mort3za/angularjs1x-styleguide-snippets/issues"
   },
-  "homepage": "https://github.com/mort3za/angularjs1x-styleguide-snippets#readme",
-  "_id": "angularjs1x-styleguide-snippets@0.8.0",
-  "_atomModuleCache": {
-    "version": 1,
-    "dependencies": [],
-    "extensions": {
-      ".json": [
-        "package.json"
-      ]
-    },
-    "folders": []
-  }
+  "homepage": "https://github.com/mort3za/angularjs1x-styleguide-snippets#readme"
 }
