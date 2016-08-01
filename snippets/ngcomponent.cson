@@ -7,7 +7,7 @@
 
                     /* @ngInject */
                     var ${1:Component} = {
-                            templateUrl: `ng.blocks/${2}.${current_lang}.html`,
+                            templateUrl: '${2:templateUrl}',
                             controllerAs: 'vm',
                             controller: Controller
                     }

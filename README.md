@@ -12,33 +12,55 @@ You can use the following snippets in JavaScript.
     'use strict';
 
     angular
-        .module('${1:module}', [
+        .module('${1:app}', [
             '${2:dependencies}'
         ]);
 })();
 ```
+
+##### ngcomponent
+```
+(function() {
+    'use strict';
+
+    /* @ngInject */
+    var ${1:Component} = {
+            templateUrl: '${2:templateUrl}',
+            controllerAs: 'vm',
+            controller: Controller
+    }
+
+      /* @ngInject */
+      function Controller(){
+            var vm = this;
+
+      }
+
+      angular
+            .module('app')
+            .component('${1:Component}', ${1:Component});
+})();
+```
+
 
 ##### ngcontroller
 ```
 (function() {
     'use strict';
 
-    angular
-        .module('${1:module}')
-        .controller('${2:Controller}', ${2:Controller});
-
-    ${2:Controller}.$inject = ['${3:dependencies}'];
-
     /* @ngInject */
-    function ${2:Controller}(${3:dependencies}) {
+    function ${2:Controller}() {
         var vm = this;
-
         activate();
 
         function activate() {
 
         }
     }
+
+    angular
+        .module('${1:app}')
+        .service('${2:Controller}', ${2:Controller});
 })();
 ```
 
@@ -47,24 +69,21 @@ You can use the following snippets in JavaScript.
 (function() {
     'use strict';
 
-    angular
-        .module('${1:module}')
-        .factory('${2:factory}', ${2:factory});
-
-    ${2:factory}.$inject = ['${3:dependencies}'];
-
     /* @ngInject */
-    function ${2:factory}(${3:dependencies}) {
-        var service = {
+    function ${2:factory}() {
+        var factory = {
             ${4:function}: ${4:function}
         };
-
-        return service;
+        return factory;
 
         function ${4:function}() {
 
         }
     }
+
+    angular
+        .module('${1:app}')
+        .factory('${2:factory}', ${2:factory});
 })();
 ```
 
@@ -72,10 +91,6 @@ You can use the following snippets in JavaScript.
 ```
 (function() {
     'use strict';
-
-    angular
-        .module('${1:module}')
-        .directive('${2:directive}', ${2:directive});
 
     /* @ngInject */
     function ${2:directive}() {
@@ -97,18 +112,19 @@ You can use the following snippets in JavaScript.
         }
     }
 
-    ${5:Controller}.$inject = ['${6:dependencies}'];
-
     /* @ngInject */
-    function ${5:Controller}(${6:dependencies}) {
+    function ${5:Controller}() {
         var vm = this;
-
         activate();
 
         function activate() {
 
         }
     }
+
+    angular
+        .module('${1:app}')
+        .directive('${2:directive}', ${2:directive});
 })();
 ```
 
@@ -117,20 +133,20 @@ You can use the following snippets in JavaScript.
 (function() {
     'use strict';
 
-    angular
-        .module('${1:module}')
-        .service('${2:Service}', ${2:Service});
-
-    ${2:Service}.$inject = ['${3:dependencies}'];
-
     /* @ngInject */
-    function ${2:Service}(${3:dependencies}) {
-        this.${4:function} = ${4:function};
+    function ${2:Service}() {
+        return {
+            ${4:function}: ${4:function}
+        };
 
         function ${4:function}() {
 
         }
     }
+
+    angular
+        .module('${1:app}')
+        .service('${2:Service}', ${2:Service});
 })();
 ```
 
@@ -139,10 +155,6 @@ You can use the following snippets in JavaScript.
 (function() {
     'use strict';
 
-    angular
-        .module('${1:module}')
-        .filter('${2:filter}', ${2:filter});
-
     function ${2:filter}() {
         return ${2:filter}Filter
 
@@ -150,5 +162,9 @@ You can use the following snippets in JavaScript.
             return ${3:params};
         }
     }
-})();
+
+    angular
+        .module('${1:app}')
+        .filter('${2:filter}', ${2:filter});
+  })();
 ```
