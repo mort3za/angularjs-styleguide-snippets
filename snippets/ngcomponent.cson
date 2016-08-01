@@ -14,8 +14,8 @@
                       /* @ngInject */
                       function Controller(){
                             var vm = this;
-                            
-                            ${3}
+
+                            ${3:}
                       }
 
                       angular
