@@ -1,10 +1,13 @@
 # angularjs-styleguide-snippets package
 
-A set of AngularJS snippets based on John Papa's style guide.
+A set of AngularJS snippets based on John Papa's style guide. Forked from angularjs-styleguide-snippets by Jason Miazga, Plus some updates and fixes. + ngComponent
+
+'inject dependencies' removed from snippets because you can use @ ngInject and it's a life saver. Try it (`gulp-ng-annotate` or `grunt-ng-annotate`)  
 
 ### Snippets
 
 You can use the following snippets in JavaScript.
+New: `ngcomponent`!
 
 ##### ngmodule
 ```
