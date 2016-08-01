@@ -7,7 +7,7 @@
 
                 angular
                     .module('${1:app}', [
-                        '${2:dependencies}'
+                        ${2:dependencies}
                     ]);
             })();
             """
