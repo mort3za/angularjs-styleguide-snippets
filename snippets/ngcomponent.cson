@@ -1,0 +1,25 @@
+'.source.js':
+    'ngComponent':
+        'prefix': 'ngcomponent'
+        'body': """
+                (function() {
+                    'use strict';
+
+                    /* @ngInject */
+                    var ${1:Component} = {
+                            templateUrl: `ng.blocks/${2}.${current_lang}.html`,
+                            controllerAs: 'vm',
+                            controller: Controller
+                    }
+
+                      /* @ngInject */
+                      function Controller(){
+                            var vm = this;
+
+                      }
+
+                      angular
+                            .module('app')
+                            .component('${1:Component}', ${1:Component});
+                })();
+        """

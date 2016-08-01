@@ -1,12 +1,34 @@
 {
   "name": "angularjs-styleguide-snippets",
   "main": "./lib/angularjs-styleguide-snippets",
-  "version": "0.7.3",
-  "description": "A set of AngularJS snippets based on John Papa's style guide.",
-  "repository": "https://github.com/jmiazga/angularjs-styleguide-snippets",
+  "version": "0.8.0",
+  "description": "A set of AngularJS snippets based on John Papa's style guide. Forked from angularjs-styleguide-snippets by Jason Miazga.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmiazga/angularjs-styleguide-snippets.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/jmiazga/angularjs-styleguide-snippets/issues"
+  },
+  "homepage": "https://github.com/jmiazga/angularjs-styleguide-snippets#readme",
+  "_id": "angularjs-styleguide-snippets@0.7.3",
+  "_shasum": "b048ed4701a232af5b68c120945f25759ab4e264",
+  "_resolved": "file:../d-115113-26696-x42g5i/package.tgz",
+  "_from": "../d-115113-26696-x42g5i/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
 }
